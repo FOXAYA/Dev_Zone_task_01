@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.flex{
+  display: flex;
+}
+.row{
+  flex-direction: row;
+}
+.col{
+  flex-direction: column;
+}
+.center{
+  text-align: center;
+}
+.Container{
+  justify-content: space-evenly;
+  height: 20vh;
+}
+h1{
+  color: #580770;
+  font-size: 30px;
+  font-weight: 900;
+}
+button{
+  line-height: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #580770;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  transition: 0.3s;
+   background-color: [object object];
+   cursor: pointer;
+}
+.incre-btn {
+  border-top: 1px solid #09c979;
+  border-right: 1px solid #09c979;
+  border-left: 10px solid #09c979;
+   border-bottom: 1px solid #09c979;
+  }
+
+.incre-btn:hover {
+  border-left-width: 70px;
+}
+
+.decre-btn {
+  
+   border-top: 1px solid #09c979;
+   border-right: 1px solid #09c979;
+   border-left: 70px solid #09c979;
+   border-bottom: 1px solid #09c979;
+   
+ }
+ 
+ .decre-btn:hover {
+   border-left-width: 1px;
+ }
+ 
