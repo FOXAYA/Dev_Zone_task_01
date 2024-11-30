@@ -54,9 +54,7 @@ button{
    border-right: 1px solid #09c979;
    border-left: 70px solid #09c979;
    border-bottom: 1px solid #09c979;
-   
  }
- 
  .decre-btn:hover {
    border-left-width: 1px;
  }
