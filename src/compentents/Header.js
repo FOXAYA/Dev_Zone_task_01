@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class Buttons extends Component {
+class Header extends Component {
   state = {
     myNum: 1,
   };
@@ -21,13 +21,16 @@ class Buttons extends Component {
 
   render() {
     return (
-      <>
-        <h1 className="center" 
-        style={{
-            color: this.state.myNum > 5 ? "red" :  "green"
-        }}
-        >{this.state.myNum}</h1>
-        
+      <header>
+        <h1
+          className="center"
+          style={{
+            color: this.state.myNum > 5 ? "red" : "green",
+          }}
+        >
+          {this.state.myNum}
+        </h1>
+
         <div className="Container flex ">
           <button className="incre-btn" onClick={this.increment}>
             Increment
@@ -36,9 +39,9 @@ class Buttons extends Component {
             decrement
           </button>
         </div>
-      </>
+      </header>
     );
   }
 }
 
-export default Buttons;
+export default Header;

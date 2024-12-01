@@ -1,18 +1,21 @@
-import { Component } from 'react';
-import './App.css';
-import Buttons from './compentents/Buttons';
-import Content  from './compentents/Content';
+import { Component } from "react";
+import "./App.css";
+import Header from "./compentents/Header";
+import Home from "./compentents/Home";
 
+class App extends Component {
+  state = {
+    myNAme: "Fox",
+    agr: 31,
+  };
 
-class App extends Component{
-  
-  render(){
+  render() {
     return (
       <>
-      <Buttons />
-      <Content />
+        <Header />
+        <Home test={this.state.myNAme} />
       </>
-    )
+    );
   }
 }
 
