@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class Header extends Component {
   state = {
-    myNum: 1,
+   myNum: 1,
   };
 
   increment = () => {
@@ -25,7 +25,7 @@ class Header extends Component {
         <h1
           className="center"
           style={{
-            color: this.state.myNum > 5 ? "red" : "green",
+            color: this.state.myNum > 10 ? "black" : "green",
           }}
         >
           {this.state.myNum}

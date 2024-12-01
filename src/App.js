@@ -6,14 +6,21 @@ import Home from "./compentents/Home";
 class App extends Component {
   state = {
     myNAme: "Fox",
-    agr: 31,
+    age: 31,
+    country: "Egypt",
+     
   };
 
+ 
   render() {
     return (
       <>
         <Header />
-        <Home test={this.state.myNAme} />
+        <Home
+          myNAme={this.state.myNAme}
+          age={this.state.age}
+          country={this.state.country}
+        />
       </>
     );
   }
